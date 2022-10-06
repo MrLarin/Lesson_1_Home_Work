@@ -13,3 +13,20 @@ int Max = a;
 Console.Write($"Максимальное число = {Max}\n");
 ```
 
+## Максимум трех чисел
+```
+int a, b, c;
+Console.Write("Введите Первое число: ");
+int.TryParse(Console.ReadLine(), out a);
+Console.Write("Введите Второе число: ");
+int.TryParse(Console.ReadLine(), out b);
+Console.Write("Введите Третье число: ");
+int.TryParse(Console.ReadLine(), out c);
+int Max = a;
+{
+    if (b > Max) Max = b;
+    if (c > Max) Max = c;
+}
+Console.Write($"Максимальное число = {Max}\n");
+
+

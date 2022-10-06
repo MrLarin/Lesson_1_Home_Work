@@ -29,4 +29,14 @@ int Max = a;
 }
 Console.Write($"Максимальное число = {Max}\n");
 
+## Проверка на четность
+```
+int a, b;
+Console.Write("Введите число: ");
+int.TryParse(Console.ReadLine(), out a);
+b = a / 2;
+{
+    if (a == b * 2) Console.Write($"Введенное Вами число Четное\n");
+    else Console.Write($"Введенное Вами число Не Четное\n");
+}
 

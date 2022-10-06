@@ -28,8 +28,10 @@ int Max = a;
     if (c > Max) Max = c;
 }
 Console.Write($"Максимальное число = {Max}\n");
+```
 
 ## Проверка на четность
+
 ```
 int a, b;
 Console.Write("Введите число: ");
@@ -40,3 +42,25 @@ b = a / 2;
     else Console.Write($"Введенное Вами число Не Четное\n");
 }
 
+```
+
+## Программа выдает все четные числа до введенного N числа
+```
+int N;
+Console.Write("Введите число: ");
+int.TryParse(Console.ReadLine(), out N);
+int[] array = new int[N];
+int Num = array.Length;
+int index = 0;
+while (index < Num)
+{
+    array[index] = index + 1;
+    index++;
+}
+index = 1;
+while (index < Num)
+{
+    Console.WriteLine(array[index]);
+    index = index + 2;
+}
+```
